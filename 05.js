@@ -13,7 +13,10 @@ function pluck(array, propiedad) {
   // productos.pluck(productos, 'name') debería devolver ['TV LCD', 'Computadora']
   // Pista: es una buena oportunidad para usar map.
 
-  // Tu código acá:
+  nuevoArreglo = array.map(function(a){
+    return a[propiedad]
+  });
+  return nuevoArreglo;
 
 }
 
